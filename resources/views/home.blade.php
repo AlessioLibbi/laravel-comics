@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-   <div class="jumbo">
-    <img src="" alt="">
-   </div>
    <template>
     <div class="content-box">
         <div class="jumbo">
