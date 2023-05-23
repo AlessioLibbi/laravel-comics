@@ -16,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $db = config('db');
     $card = $db['card'];
+    $links = $db['links'];
+    return view('home', compact('card', 'links'));
+});
 
-    return view('home', compact('card'));
+Route::get('/characters', function () {
+    $db = config('db');
+    $card = $db['card'];
+    $links = $db['links'];
+    return view('characters', compact('card', 'links'));
+});
+
+Route::get('/comics', function () {
+    $db = config('db');
+    $card = $db['card'];
+    $links = $db['links'];
+    return view('comics', compact('card', 'links'));
 });

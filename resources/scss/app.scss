@@ -16,3 +16,74 @@ body {
 img {
     max-width: 100%;
 }
+.header-box {
+    @include flex(row, space-between, center);
+    width: $width;
+    margin: 0 auto;
+    height: 140px;
+
+    .right {
+        ul {
+            @include flex(row, space-between, center);
+            list-style: none;
+
+            li {
+                margin: 0 10px;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: inherit;
+                }
+
+                &.active,
+                &:hover {
+                    color: $primary;
+                    border-bottom: 5px solid $primary;
+                }
+            }
+        }
+    }
+}
+
+.content-box {
+    background-color: #1c1c1c;
+    position: relative;
+    padding-bottom: 30px;
+
+    .jumbo {
+        .jumbo-img {
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+            object-position: 0 0;
+        }
+    }
+
+    h3 {
+        background-color: $primary;
+        padding: 15px;
+        color: white;
+        position: absolute;
+        top: 370px;
+        left: 150px;
+    }
+
+    .content-container {
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: $width;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    button {
+        @include flex(row, center, center);
+        padding: 10px 50px;
+        margin: 0 auto;
+        color: white;
+        font-weight: 700;
+        background-color: $primary;
+    }
+}

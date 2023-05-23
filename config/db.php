@@ -75,5 +75,74 @@ return [
             "series" => "Catwoman",
             "type" => "graphic novel"
         ]
+    ],
+    "links" => [
+        [
+            "text" => "CHARACTERS",
+            "url" => "/characters",
+            "current" => false,
+
+        ],
+
+        [
+
+            "text" => "COMICS",
+            "url" => "/comics",
+            "current" => true
+        ],
+        [
+
+            "text" => "MOVIES",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+
+            "text" => "TV",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+
+            "text" => "GAMES",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+            "text" => "COLLECTIBLES",
+            "url" => "/blog",
+            "current" => false
+
+        ],
+        [
+
+            "text" => "VIDEOS",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+
+            "text" => "FANS",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+
+            "text" => "NEWS",
+            "url" => "/blog",
+            "current" => false
+        ],
+        [
+
+            "text" => "SHOP",
+            "url" => "/blog",
+            "current" => false
+        ]
+
+
+
+
+
+
     ]
 ];
